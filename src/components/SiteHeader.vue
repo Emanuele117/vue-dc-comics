@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <img src="./assets/img/dc-logo.png" alt="" />
+      <img src="../assets/img/dc-logo.png" alt="" />
       <a href="">CHARACTERS</a>
       <a href="">COMICS</a>
       <a href="">MOVIES</a>
@@ -22,5 +22,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang= "scss">
+div {
+  a {
+    color: red;
+  }
+}
 </style>
