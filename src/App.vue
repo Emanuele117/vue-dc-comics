@@ -2,7 +2,7 @@
   <div id="app">
     <SiteHeader />
 
-    <main></main>
+    <SiteMain />
 
     <footer></footer>
   </div>
@@ -10,11 +10,13 @@
 
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
+import SiteMain from "./components/SiteMain.vue";
 
 export default {
   name: "App",
   components: {
     SiteHeader,
+    SiteMain,
   },
 };
 /* import HelloWorld from "./components/HelloWorld.vue";
