@@ -51,20 +51,23 @@ $link-color: #0282f9;
 .icons-container {
   height: 200px;
   background-color: $link-color;
+  margin-bottom: -19px;
+  position: relative;
   .icons {
     display: flex;
     margin-left: 12rem;
 
     .icon {
       display: flex;
-      height: 70px;
-      margin-left: 5rem;
+      height: 50px;
+      margin-left: 3rem;
       margin-top: 3rem;
     }
     .p-icon {
       color: white;
       margin: 10px;
-      margin-top: 30px;
+      margin-top: 20px;
+      font-size: 12px;
     }
   }
 }

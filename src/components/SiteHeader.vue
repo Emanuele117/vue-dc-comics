@@ -37,7 +37,7 @@ header {
       margin-top: 1rem;
     }
     .link {
-      margin-left: 20rem;
+      margin-left: 14rem;
     }
     a {
       color: black;
