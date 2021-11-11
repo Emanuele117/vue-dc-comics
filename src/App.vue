@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header></header>
+    <SiteHeader />
 
     <main></main>
 
@@ -9,7 +9,16 @@
 </template>
 
 <script>
+import SiteHeader from "./components/SiteHeader.vue";
+
+export default {
+  name: "App",
+  components: {
+    SiteHeader,
+  },
+};
 /* import HelloWorld from "./components/HelloWorld.vue";
+
 
 export default {
   name: "App",
