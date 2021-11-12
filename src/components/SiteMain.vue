@@ -1,14 +1,16 @@
 <template>
   <main>
     <div class="content">
-      <div class="products">
+      <div class="products row">
         <product
           v-for="product in products"
           :key="product.series"
           :image="product.thumb"
           :titolo="product.series"
           :price="product.price"
+          class="col-3"
         />
+        <span class="load">LOAD MORE</span>
       </div>
     </div>
     <div class="icons-container">
@@ -143,12 +145,41 @@ export default {
 $link-color: #0282f9;
 .content {
   background-color: black;
-  height: 150px;
+  height: 650px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 830px;
+    justify-content: center;
+    margin-left: 18rem;
+    height: 400px;
+    padding: 50px;
+  }
+  .load {
+    color: white;
+    background-color: $link-color;
+    padding: 10px;
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+  }
+  .cards {
+    margin: 15px;
+  }
+  img {
+    height: 150px;
+  }
+  h3 {
+    font-size: 12px;
+    color: white;
+    width: 100px;
+    text-align: start;
+  }
   p {
     color: white;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 15rem;
+    font-size: 10px;
+    text-align: start;
   }
 }
 .icons-container {

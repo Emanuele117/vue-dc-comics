@@ -29,6 +29,7 @@ export default {
 $link-color: #0282f9;
 header {
   width: 100%;
+  height: 150px;
 
   div {
     display: flex;
