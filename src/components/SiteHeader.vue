@@ -45,6 +45,7 @@ header {
       margin: 10px;
       text-decoration: none;
       margin-top: 60px;
+      font-weight: bold;
     }
     .active {
       color: $link-color;

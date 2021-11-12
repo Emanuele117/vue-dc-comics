@@ -1,6 +1,8 @@
 <template>
   <main>
+    <div class="jumbo"></div>
     <div class="content">
+      <span class="current-series">CURRENT SERIES</span>
       <div class="products row">
         <product
           v-for="product in products"
@@ -143,9 +145,25 @@ export default {
 
 <style lang= "scss">
 $link-color: #0282f9;
+.jumbo {
+  height: 300px;
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-size: cover;
+}
 .content {
   background-color: black;
   height: 650px;
+  .current-series {
+    background-color: $link-color;
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    margin-left: 23rem;
+    margin-bottom: 3rem;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +181,7 @@ $link-color: #0282f9;
     font-size: 10px;
     width: 100px;
     text-align: center;
+    font-weight: bold;
   }
   .cards {
     margin: 15px;
